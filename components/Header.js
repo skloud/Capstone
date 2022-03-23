@@ -1,10 +1,9 @@
 /* eslint-disable prettier/prettier */
 import html from "html-literal";
 
-export default () => html`
+export default (st) => html`
 
-<header><h1> Mimosa Land</h1>
-  <a id="heroButton" href="" onClick="alert('Hi! Thank you for clicking!')"
-  >"Click Here!"</a>
+<header><h1>${st.header}</h1>
+
  </header>
 `;

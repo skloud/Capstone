@@ -1,5 +1,5 @@
 header {
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS8iQUROrOIcWobtV6Z9jYtj16gF4dz5qP8Q&usqp=CAU);
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvf-YSMmM6wtEjYtvf_BPsT4J8XQt0pfxLWg&usqp=CAU);
   background-size: cover;
   height: 100vh;
   display: flex;
@@ -9,18 +9,38 @@ header {
 }
 
 h1 {
-  color: #0F110C;
+  color: #b0afc2;
   text-align: center;
+}
+
+h2 {
+  color:#d87fa4;
+  text-align: center;
+}
+
+
+footer {
+  color:rgb(105, 221, 221)
+}
+
+
+pancake {
+
+
+}
+
+span {
+  background-color: rgba(255,255,255,.5);
 }
 
 
 
 header > a {
   text-decoration: none;
-  background-color: #612940;
+  background-color: #ca86a3;
   font-size: 1.5em;
   padding: 1.5rem;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 content > div {
@@ -33,14 +53,11 @@ body > form {
 
 
 body {
-  font-size: 15px;
+  font-size: 20px;
   font-family: 'Sansita Swashed', cursive;
-}
-
-:root {
-  --primary-color: #CECCCC;
-  --secondary-color: #9D6381;
-  --text-primary-color: #0F110C;
+  --primary-color: #7a7878;
+  --secondary-color: black;
+  --text-primary-color: #9D6381;
   --text-secondary-color: #612940;
 }
 
@@ -64,6 +81,7 @@ header {
 nav {
   display: flex;
   align-items: center;
+  justify-content: space-around;
   flex-direction: column;
 }
 
@@ -75,7 +93,8 @@ nav > i {
 nav > ul {
   display: flex;
   align-items: center;
-  flex-direction: column;
+  justify-content: space-between;
+  flex-direction: row;
   padding: 0 0;
 }
 
@@ -106,114 +125,21 @@ nav > ul > li {
   }
 
 
+  home {
+    margin: 0;
+    padding: 5px;
+    background-color: lightgray;
+  }
+
+  footer {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: flex-end;
+
+  }
 
 
 
 
 
-
-
-/*.blog-post {
-  background-color: var(--primary-color);
-  color: var(--text-primary-color);
-}
-
-body:focus {
-  outline: none;
-}
-nav {
-  display: block;
-}
-footer {
-  text-align: center;
-  padding: 3px;
-  background-color: DarkSalmon;
-  color: white;
-}
-main {
-  margin: 0;
-  padding: 5px;
-  background-color: lightgray;
-}
-
-main > h1, p, .browser {
-  margin: 10px;
-  padding: 5px;
-}
-
-.browser {
-  background: white;
-}
-
-.browser > h2, p {
-  margin: 4px;
-  font-size: 90%;
-}
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-.column {
-  float: left;
-  width: 33.3%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-}
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
-}
-
-.about-section {
-  padding: 50px;
-  text-align: center;
-  background-color: #474e5d;
-  color: white;
-}
-
-.container {
-  padding: 0 16px;
-}
-
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.title {
-  color: grey;
-}
-
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-}
-
-.button:hover {
-  background-color: #555;
-}
-
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  /* }
-} */

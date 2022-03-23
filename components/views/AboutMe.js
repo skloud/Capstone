@@ -3,6 +3,6 @@ import html from "html-literal";
 
 export default () => html`
 <section id="me">
-<h2>Events for Families</h2>
-<p> Insert info about me here.</p>
+<h2>About This Project</h2>
+<p> Info About Project.</p>
 </section>`;

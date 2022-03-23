@@ -1,18 +1,15 @@
 /* eslint-disable prettier/prettier */
 import html from "html-literal";
 
-export default () => html`
+export default (links) => html`
 
 <nav>
-
-  <i class="fa-solid fa-bars"></i>
-  <ul>
-    <li>Home</li>
-    <li>Reviews</li>
-    <li>Events</li>
-    <li>About Me</li>
-  </ul>
-  <ul class="hidden--mobile nav-links"></ul>
-
-</nav>
+    <i class="fas fa-bars"></i>
+    <ul class="hidden--mobile nav-links">
+      ${links.map(
+        (el) =>
+          `<li><a href="/${el.title}" title="${el.title}" data-navigo>${el.text}</a></li>`
+      )}
+    </ul>
+  </nav>
 `;
