@@ -23,37 +23,7 @@ function render(st) {
 //render();
 
 
-//const options = {
-//   method: 'GET',
-//   url: 'https://cocktails3.p.rapidapi.com/random',
-//   headers: {
-//     'X-RapidAPI-Host': 'cocktails3.p.rapidapi.com',
-//     'X-RapidAPI-Key': 'SIGN-UP-FOR-KEY'
-//   }
-// };
 
-// axios.request(options).then(function (response) {
-// 	console.log(response.data);
-// }).catch(function (error) {
-// 	console.error(error);
-// });
-
-//const options = {
-//   method: 'POST',
-//   url: 'https://yelpapiserg-osipchukv1.p.rapidapi.com/getAutocomplete',
-//   headers: {
-//     'content-type': 'application/x-www-form-urlencoded',
-//     'X-RapidAPI-Host': 'YelpAPIserg-osipchukV1.p.rapidapi.com',
-//     'X-RapidAPI-Key': '35593ccd76msh93301d75afe9c69p135196jsn046cce0d7c59'
-//   },
-//   data: {text: '<REQUIRED>', accessToken: '<REQUIRED>'}
-// };
-
-// axios.request(options).then(function (response) {
-// 	console.log(response.data);
-// }).catch(function (error) {
-// 	console.error(error);
-// });
 
   function addEventListeners(st) {
 
@@ -108,25 +78,3 @@ router
 
 
 
-//   import axios from "axios";
-
-// const options = {
-//   method: 'POST',
-//   url: 'https://yelpapiserg-osipchukv1.p.rapidapi.com/getBusinesses',
-//   headers: {
-//     'content-type': 'application/x-www-form-urlencoded',
-//     'X-RapidAPI-Host': 'YelpAPIserg-osipchukV1.p.rapidapi.com',
-//     'X-RapidAPI-Key': '35593ccd76msh93301d75afe9c69p135196jsn046cce0d7c59'
-//   },
-//   data: {
-//     term: ['"brunch"', '"brunch"'],
-//     categories: '"brunch,breakfast,family"',
-//     THIS IS YOU YELP API--------->accessToken: '<REQUIRED>'
-//   }
-// };
-
-// axios.request(options).then(function (response) {
-// 	console.log(response.data);
-// }).catch(function (error) {
-// 	console.error(error);
-// });
