@@ -1,5 +1,5 @@
 html{
-  background-color: #f4f7f6;
+  background-color: #beacba;
 }
 
 header {
@@ -27,6 +27,31 @@ footer {
   color:rgb(105, 221, 221)
 }
 
+
+
+/* unvisited link */
+a:link {
+  color: #d87fa4;
+  background-color: ;
+}
+
+/* visited link */
+a:visited {
+  color: rgb(105, 221, 221);
+  background-color: ;
+}
+
+/* mouse over link */
+a:hover {
+  color: #612940;
+  background-color: ;
+}
+
+/* selected link */
+a:active {
+  color: #4e4c71;
+  background-color: ;
+}
 
 
 header > a {
@@ -57,7 +82,7 @@ body {
 
 @media (min-width: 550px) {
   nav > .fa-bars {
-    display: outside;
+    display: none;
   }
 }
 
@@ -75,8 +100,9 @@ header {
 nav {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: column;
+
 }
 
 nav > i {
@@ -87,7 +113,7 @@ nav > i {
 nav > ul {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: row;
   padding: 0 0;
 }
