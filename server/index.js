@@ -28,12 +28,21 @@ db.once(
 
 //======================
 
-const myMiddleware = (request, response, next) => {
-  // do something with request and/or response
+const cors = (request, response, next) => {
+  request.setHeader(
+    "Access-Control-Allow-Headers",
+    "X-Requested-With,content-type, Accept,Authorization,Origin"
+  );
+  request.setHeader("Access-Control-Allow-Origin", "*");
+  request.setHeader(
+    "Access-Control-Allow-Methods",
+    "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+  );
+  request.setHeader("Access-Control-Allow-Credentials", true);
   next(); // tell express to move to the next middleware function
 };
 
-app.use(myMiddleware); // use the myMiddleware for every request to the app
+//use the myMiddleware for every request to the app
 
 //Logging all calls to our server
 
@@ -43,6 +52,7 @@ const logging = (request, response, next) => {
 };
 
 // tell the app to use the middleware
+app.use(cors);
 app.use(express.json());
 app.use(logging);
 

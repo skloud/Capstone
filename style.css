@@ -12,45 +12,65 @@ header {
   align-items: center;
 }
 
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+
+nav li {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+
 h1 {
   color: #b0afc2;
   text-align: center;
 }
 
 h2 {
-  color:#d87fa4;
+  color:#c75a87;
   text-align: center;
 }
 
+h3 {
+  color:black;
+  text-align: center;
+}
 
 footer {
-  color:rgb(105, 221, 221)
+  color:rgb(12, 90, 90)
 }
 
 
 
 /* unvisited link */
 a:link {
-  color: #d87fa4;
-  background-color: ;
+  color: #c75a87;
+
 }
 
 /* visited link */
 a:visited {
-  color: rgb(105, 221, 221);
-  background-color: ;
+  color: rgb(12, 90, 90);
+
 }
 
 /* mouse over link */
 a:hover {
   color: #612940;
-  background-color: ;
+
 }
 
 /* selected link */
 a:active {
   color: #4e4c71;
-  background-color: ;
+
 }
 
 
@@ -97,7 +117,7 @@ header {
   height: 90vh;
 }
 
-nav {
+/* visited link nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -110,18 +130,24 @@ nav > i {
   font-size: 2em;
 }
 
-nav > ul {
+
+
+/* visited link
+nav ul {
+  margin:0;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: row;
-  padding: 0 0;
+  padding: 25%;
 }
 
-nav > ul > li {
-  padding: .5rem;
-  list-style-type: none;
-}
+/* visited link
+nav ul {
+  display: flex;
+  height: 100%;
+  padding: 10px;
+} */
 
 
 @media (min-width: 550px){
@@ -130,19 +156,9 @@ nav > ul > li {
   }
 }
 
-  nav > ul {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 0 0;
-  }
 
-  nav > ul > li {
-    display: inline-block;
-    text-decoration: none;
-    border: 1px solid;
-    padding: .5rem .5rem;
-    border-radius: 25px;
-  }
+
+
 
 
   home {
