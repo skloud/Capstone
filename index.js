@@ -51,15 +51,15 @@ router.hooks({
     if (view === "Home") {
       console.log("review");
       axios
-        .get(`http://www.themealdb.com/api/json/v1/1/filter.php?c=Breakfast`)
+        .get(`https://www.themealdb.com/api/json/v1/1/filter.php?c=Breakfast`)
         .then(response => {
-          console.log(response);
+          console.log(response.data);
+          state.Home.salmon = response.data.meals[5].strMealThumb;
+          console.log(state.Home.salmon);
           done();
         })
         .catch(err => console.log(err));
-    } else {
-      done();
-    }
+    } else done();
   }
 });
 
